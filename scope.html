@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>local scope</h1>
+    <p id="demo12"></p>
+    <p id ="dem011"></p>
+    <script>
+        myScope();
+        function myScope(){
+            let name = "Hari";
+            document.getElementById("demo12").innerHTML = typeof name + " " + name;
+
+        }
+        document.getElementById("demo11").innerHTML = typeof name;
+    </script>
+    <h1>Global Variable</h1>
+    <p id ="demo13"></p>
+    <script>
+        // we can access global variable anywhere from the script
+        let fruit = "mango";
+        myGlobalFunction();
+        function myGlobalFunction(){
+            document.getElementById("demo13").innerHTML = "I love eating " + fruit;
+        }
+    </script>
+    <!--  Use "Use strict" -->
+    
+</body>
+</html>

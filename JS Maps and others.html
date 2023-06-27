@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Map object</h1>
+    <p id="demo1"></p>
+    <script>
+        // create a map
+        const bikes = new Map([
+            ["Yamaha",400000],
+            ["Bajaj", 300000],
+            ["Yatri", 600000]
+        ])
+        // bikes.set("Yamaha",500000);
+        // The forEach() method calls a function for each key/value pair in a Map:
+
+
+        let text = " ";
+        bikes.forEach (function(value,key){
+            text += key + "  =   " + value + "<hr>"
+        })
+
+        // document.getElementById("demo1").innerHTML = bikes.has("Yamaha"); //has() checks is the elemnt available on map
+        document.getElementById("demo1").innerHTML=text
+    </script>
+
+    <h1> set() Method</h1>
+    <p id = "demo9"></p>
+    <script>
+        const books = new Map();
+        // set map values
+        books.set("seto dharti",500);
+        books.set("Alcamist", 300);
+        books.set("Muna Madan", 1000);
+
+        books.delete("seto dharti"); //delete element on map
+
+        document.getElementById("demo9").innerHTML = books.get("Muna Madan");
+        document.getElementById("demo9").innerHTML = books.size; // gives the number of element on maps
+    </script>
+
+<!-- typeOf Operator  -->
+<h1>Type of operator</h1>
+<p id = "demo10"></p>
+<script>
+    document.getElementById("demo10").innerHTML = "'hello' you " + typeof "hello" + "<hr>";
+</script>
+
+</body>
+</html>

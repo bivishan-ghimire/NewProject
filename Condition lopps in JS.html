@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions loops in JS</title>
+    <h1>Getting Git reposotiory</h1>
+</head>
+<body>
+    <h1>Welcom to Loop </h1>
+    <p id="demo"></p>
+    <script>
+        let a = 12;
+        let b = 30;
+        if (a > b) {
+           ans = "a is great";
+        }
+        else{
+        ans = "b is great";
+        }
+        document.getElementById("demo").innerHTML= ans;
+
+        // condition loop else if;
+        </script>
+        <h2>if ,else if, else condition loop </h2>
+        <p id="demo2"></p>
+
+        <script>
+            let per=89;
+            if (per < 50){
+                ans="Second Division";
+            }
+            else if (per < 79 ){
+                ans="First Division";
+            }
+            else {
+                ans="Disction Great";
+            }
+            document.getElementById("demo2").innerHTML= ans;
+        </script>
+        <!-- Switch case -->
+        <h1>Switch Case Statement</h1>
+        <p id="demo3"></p>
+        <script>
+            let day;
+            switch (new Date().getDate()){
+                case 0:
+                    day="sunday";
+                    break;
+
+                case 1: 
+                    day= "Monday";
+                    break;
+                default:
+                    day="Data incomplete";
+            }
+            document.getElementById("demo3").innerHTML= day;
+        </script>
+        <!-- for of loop  -->
+
+        <h1>For loop condition</h1>
+        <p id = "demo4"></p>
+        <script>
+            let name = "kathmandu";
+            let text = "";
+            for ( let x of name){
+                text += x + "<hr>";
+            }
+            document.getElementById("demo4").innerHTML= text;
+        </script>
+
+        <!-- for In loop -->
+        <h1>For in loop statement</h1>
+        <p id = "demo5"></p>
+        <script>
+            const data = { fullName:"hari",lastName:"bahadur", age:30};
+            let txt = "";
+            for (let x in data){
+                txt += data[x] + "<i> "; //here space in "<i> " gives the space bettween words
+            }
+            document.getElementById("demo5").innerHTML = txt;
+        </script>
+        <!-- break statement -->
+        <h1>Break statement</h1>
+        <p id = "demo6"></p>
+        <script>
+            let num = "";
+            for (let i = 0; i<10;i++){
+                if (i===3){break;}
+                num += "the value is " + i + "<hr>";
+            }
+            document.getElementById("demo6").innerHTML = num;
+        </script>
+
+        <!-- continue statement -->
+        <h1>Continue statement</h1>
+        <p id = "demo7"></p>
+        <script>
+            let num1 = "";
+            for (let j=0; j<20;j++){
+                if (j=== 10) {continue;}
+                num1 += "the number you want are " + j + "<hr>";
+            }
+            document.getElementById("demo7").innerHTML = num1;
+        </script>
+
+        <!-- Iterables -->
+                
+</body>
+</html>
